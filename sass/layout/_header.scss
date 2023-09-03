@@ -1,0 +1,41 @@
+/* Header */
+
+.header{
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+
+    .bg-menu{
+        background-image: url("../multimedia/background.jpg");
+        font-family: "Abel", sans-serif;
+        width: 100%; 
+        
+        .nombre-nav {
+            color: #55b999;
+            font-size: 25px;
+
+                &:hover{
+                    color: #86edcd;
+                    scale: 0.98;
+                    transition: 350ms;
+                }
+          }
+
+          .font-nav {
+            color: #ebebeb;
+            font-size: 20px;
+
+            &:hover{
+                color: #55b999;
+                scale: 0.98;
+                transition: 350ms;
+                
+            }
+          }
+
+          .nav-item {
+            margin-right: 3rem;
+          }
+    }
+    
+}

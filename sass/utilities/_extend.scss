@@ -1,0 +1,29 @@
+
+%texto-general {
+    color: #ebebeb;
+    font-size: 17px;
+
+}
+
+%hover-links {
+    color: #86edcd;
+    cursor: pointer;
+    transition: 300ms;
+    
+    
+}
+
+%titulo-pages {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+%hover-youtube {
+     opacity: 0.8;
+    filter: grayscale(100%);
+     scale: 0.95;
+     transition: 200ms;
+}
+
