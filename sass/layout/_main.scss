@@ -484,6 +484,10 @@ main {
               padding: 1rem;
               border-radius: 3%;
               box-shadow: 2px 2px 10px #015735;
+
+              @include mobile{
+                width: 280px;
+              }
   
               label{
                 color: black;
@@ -505,6 +509,10 @@ main {
                   margin-left: 21%;
                   margin-top: 2rem;
                   margin-bottom: 1rem;
+
+                  @include mobile {
+                    margin-left: 32%;
+                  }
   
   
                       &:hover{
