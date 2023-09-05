@@ -158,9 +158,6 @@ main .bio {
   main .bio .noticias {
     grid-row-start: 5;
     grid-column: span 2; }
-    @media screen and (max-width: 992px) {
-      main .bio .noticias {
-        margin-left: 4%; } }
     main .bio .noticias h2 {
       text-align: center;
       font-size: 40px; }
@@ -185,13 +182,13 @@ main .bio {
       width: 40%;
       margin-top: 1rem;
       margin-bottom: 2rem;
-      margin-left: 30%;
+      margin-left: 29%;
       border-radius: 5%;
       box-shadow: 2px 2px 5px #161616; }
       @media screen and (max-width: 992px) {
         main .bio .noticias .img-noticias img {
           width: 45%;
-          margin-left: 26%; } }
+          margin-left: 28%; } }
       @media screen and (max-width: 576px) {
         main .bio .noticias .img-noticias img {
           display: none; } }

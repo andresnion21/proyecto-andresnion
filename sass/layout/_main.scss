@@ -120,9 +120,7 @@ main {
         grid-row-start: 5;
         grid-column: span 2;
   
-        @include tablet{
-          margin-left: 4%;
-        }
+   
   
         h2 {
           text-align: center;
@@ -158,14 +156,14 @@ main {
             width: 40%;
             margin-top: 1rem;
             margin-bottom: 2rem;
-            margin-left: 30%; 
+            margin-left: 29%; 
             border-radius: 5%;
             box-shadow: 2px 2px 5px rgb(22, 22, 22);
          
 
              @include tablet{
               width: 45%;
-              margin-left: 26%;
+              margin-left: 28%;
             } 
 
             @include mobile{
