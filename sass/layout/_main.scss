@@ -543,7 +543,8 @@ main {
           margin-bottom: 10rem;
           margin-top: 5rem;
 
-          h2{
+          h3{
+            @extend %texto-general;
             text-align: center;
           }
           
@@ -554,6 +555,12 @@ main {
               justify-content: center;
               margin-top: 40px;
               margin-left: 4%;
+
+
+              @include mobile{
+                justify-content: space-around;
+                margin-left: 0;
+              }
   
   
               .img-redes2 {
@@ -562,12 +569,17 @@ main {
                   margin-top: 40px;
                   margin-right: 45px;
                   margin-bottom: 10px;
+
+                  @include mobile{
+                    margin-right: 0;
+                  }
   
                     &:hover{
                       opacity: 0.8;
                       scale: 0.9;
                       transition: 250ms;
                     }
+
   
                    
                 }
@@ -576,6 +588,7 @@ main {
                   width: 70px;
                   height: 70px;
                   margin-bottom: 6px;
+                  
                 }
               
             }

@@ -32,7 +32,7 @@ label {
   color: #ebebeb;
   font-size: 17px; }
 
-.contacto h2 {
+.contacto h2, .contacto .follow h3 {
   color: #ebebeb;
   font-size: 17px; }
 
@@ -416,7 +416,7 @@ main .bio {
     width: 100%;
     margin-bottom: 10rem;
     margin-top: 5rem; }
-    .contacto .follow h2 {
+    .contacto .follow h3 {
       text-align: center; }
     .contacto .follow .contacto-redes {
       display: flex;
@@ -424,12 +424,19 @@ main .bio {
       justify-content: center;
       margin-top: 40px;
       margin-left: 4%; }
+      @media screen and (max-width: 576px) {
+        .contacto .follow .contacto-redes {
+          justify-content: space-around;
+          margin-left: 0; } }
       .contacto .follow .contacto-redes .img-redes2 {
         width: 60px;
         height: 60px;
         margin-top: 40px;
         margin-right: 45px;
         margin-bottom: 10px; }
+        @media screen and (max-width: 576px) {
+          .contacto .follow .contacto-redes .img-redes2 {
+            margin-right: 0; } }
         .contacto .follow .contacto-redes .img-redes2:hover {
           opacity: 0.8;
           scale: 0.9;
