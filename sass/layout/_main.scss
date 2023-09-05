@@ -554,12 +554,12 @@ main {
               align-items: center;
               justify-content: center;
               margin-top: 40px;
-              margin-left: 4%;
+             
 
 
               @include mobile{
                 justify-content: space-around;
-                margin-left: 0;
+                
               }
   
   
@@ -567,11 +567,13 @@ main {
                   width: 60px;
                   height: 60px;
                   margin-top: 40px;
-                  margin-right: 45px;
+                  margin-right: 38px;
                   margin-bottom: 10px;
+                  margin-left: 3rem;
 
                   @include mobile{
                     margin-right: 0;
+                    margin-left: 0;
                   }
   
                     &:hover{
