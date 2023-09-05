@@ -141,8 +141,8 @@ main .bio {
     @media screen and (max-width: 992px) {
       main .bio .spotify {
         grid-row-start: 4;
-        margin-right: 31%;
-        margin-top: 3rem; } }
+        margin-top: 3rem;
+        margin-left: 3%; } }
     @media screen and (max-width: 576px) {
       main .bio .spotify {
         grid-row-start: 3; } }
@@ -176,11 +176,29 @@ main .bio {
       text-align: center;
       font-size: 17px;
       overflow: auto; }
+      main .bio .noticias .texto-noticias a {
+        color: #55b999; }
+        main .bio .noticias .texto-noticias a:hover {
+          color: #86edcd;
+          transition: 350ms; }
+    main .bio .noticias .img-noticias img {
+      width: 40%;
+      margin-top: 1rem;
+      margin-bottom: 2rem;
+      margin-left: 30%;
+      border-radius: 5%;
+      box-shadow: 2px 2px 5px #161616; }
+      @media screen and (max-width: 992px) {
+        main .bio .noticias .img-noticias img {
+          width: 45%;
+          margin-left: 26%; } }
+      @media screen and (max-width: 576px) {
+        main .bio .noticias .img-noticias img {
+          display: none; } }
 
 /* Main Videos */
 .videos {
   width: 100%;
-  padding: 10px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -203,32 +221,32 @@ main .bio {
     flex-direction: row; }
     @media screen and (max-width: 992px) {
       .videos .canales-yt {
-        flex-direction: column; } }
+        flex-direction: column;
+        padding-left: 30%;
+        padding-right: 30%; } }
+    @media screen and (max-width: 576px) {
+      .videos .canales-yt {
+        padding-left: 20%;
+        padding-right: 20%; } }
     .videos .canales-yt .canal-a img {
       width: 310px;
       height: 200px;
-      margin-left: 0; }
+      margin-left: 25px; }
       @media screen and (max-width: 992px) {
         .videos .canales-yt .canal-a img {
-          margin-left: 2.5rem;
+          width: 100%;
+          margin-left: 0;
           margin-bottom: 2rem; } }
-      @media screen and (max-width: 420px) {
-        .videos .canales-yt .canal-a img {
-          margin-left: 1rem;
-          width: 300px;
-          height: 190px; } }
     .videos .canales-yt .canal-bs img {
       width: 340px;
-      height: 230px;
-      margin-left: 2.5rem; }
-      @media screen and (max-width: 420px) {
+      height: 200px;
+      margin-left: 4.5rem; }
+      @media screen and (max-width: 992px) {
         .videos .canales-yt .canal-bs img {
-          margin-left: 1rem;
-          width: 300px;
-          height: 190px; } }
+          width: 100%;
+          margin-left: 0; } }
   .videos .iframes {
-    display: flex;
-    margin-left: 1%; }
+    display: flex; }
     @media screen and (max-width: 992px) {
       .videos .iframes {
         flex-direction: column;
@@ -307,17 +325,22 @@ main .bio {
     width: 60%;
     padding: 20px;
     margin-left: 20%; }
+    @media screen and (max-width: 576px) {
+      .main-tabs .tab img {
+        width: 100%;
+        margin-left: 0;
+        padding: 0; } }
   .main-tabs .tab .video-tabs {
     margin-left: 31%; }
     @media screen and (max-width: 992px) {
       .main-tabs .tab .video-tabs {
-        margin-left: 23%; } }
+        margin-left: 16%; } }
     @media screen and (max-width: 576px) {
       .main-tabs .tab .video-tabs {
         margin-left: 9%; } }
     @media screen and (max-width: 992px) {
       .main-tabs .tab .video-tabs iframe {
-        width: 70%; } }
+        width: 80%; } }
     @media screen and (max-width: 576px) {
       .main-tabs .tab .video-tabs iframe {
         width: 90%; } }
@@ -326,12 +349,12 @@ main .bio {
     margin-left: 25%; }
     @media screen and (max-width: 992px) {
       .main-tabs .tab .tab-dos img {
-        width: 60%;
-        margin-left: 20%; } }
-    @media screen and (max-width: 576px) {
-      .main-tabs .tab .tab-dos img {
         width: 80%;
         margin-left: 10%; } }
+    @media screen and (max-width: 576px) {
+      .main-tabs .tab .tab-dos img {
+        width: 100%;
+        margin-left: 0; } }
 
 /* Main Contacto */
 .contacto {
@@ -358,23 +381,23 @@ main .bio {
       flex-direction: column;
       align-content: center;
       margin-top: 30px;
-      width: 300px;
-      background-color: #999;
+      width: 400px;
+      background-color: #5d5c5c;
       padding: 1rem;
       border-radius: 3%;
-      box-shadow: 2px 2px 10px #007a49; }
+      box-shadow: 2px 2px 10px #015735; }
       .contacto .article-form .form label {
         color: black;
         font-size: 20px; }
       .contacto .article-form .form .input {
-        width: 220px;
-        height: 20px; }
+        width: 250px;
+        height: 25px; }
       .contacto .article-form .form .button {
         width: 100px;
         background-color: #55b999;
         border-radius: 10%;
         box-shadow: 1px 1px 3px;
-        margin-left: 23%;
+        margin-left: 21%;
         margin-top: 2rem;
         margin-bottom: 1rem; }
         .contacto .article-form .form .button:hover {
@@ -385,22 +408,24 @@ main .bio {
         color: black;
         font-size: 20px; }
       .contacto .article-form .form textarea {
-        width: 220px; }
+        width: 250px; }
   .contacto .follow {
     width: 100%;
-    text-align: center;
     margin-bottom: 10rem;
     margin-top: 5rem; }
+    .contacto .follow h2 {
+      text-align: center; }
     .contacto .follow .contacto-redes {
-      width: 60%;
-      display: inline;
+      display: flex;
+      align-items: center;
+      justify-content: center;
       margin-top: 40px;
-      margin-left: 2%; }
+      margin-left: 4%; }
       .contacto .follow .contacto-redes .img-redes2 {
         width: 60px;
         height: 60px;
         margin-top: 40px;
-        margin-right: 30px;
+        margin-right: 45px;
         margin-bottom: 10px; }
         .contacto .follow .contacto-redes .img-redes2:hover {
           opacity: 0.8;
@@ -421,7 +446,7 @@ footer {
     flex-wrap: wrap;
     justify-content: space-between; }
     footer .footer-flex ul {
-      margin-left: 10%;
+      margin-left: 8%;
       margin-top: 20px; }
       @media screen and (max-width: 576px) {
         footer .footer-flex ul {
@@ -432,26 +457,30 @@ footer {
           color: #55b999;
           font-size: 17px; }
   footer .redes {
-    margin-right: 10%; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 7%; }
+    @media screen and (max-width: 992px) {
+      footer .redes {
+        margin-right: 5%; } }
     @media screen and (max-width: 576px) {
       footer .redes {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; } }
+        margin-right: 0; } }
     footer .redes .img-redes {
       width: 30px;
       height: 30px;
       margin-top: 20px;
-      margin-right: 20px;
-      margin-bottom: 10px; }
+      margin-right: 2.5rem; }
       footer .redes .img-redes:hover {
         opacity: 0.6;
         scale: 0.95;
         transition: 200ms; }
       @media screen and (max-width: 576px) {
         footer .redes .img-redes {
-          margin-bottom: 0px; } }
+          margin-bottom: 0px;
+          margin-right: 2rem; } }
     footer .redes .youtube {
       width: 35px;
       height: 40px;

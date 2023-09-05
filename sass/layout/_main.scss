@@ -88,9 +88,9 @@ main {
   
         @include tablet{
           grid-row-start: 4;
-          
-          margin-right: 31%;
           margin-top: 3rem;
+          margin-left: 3%;
+     
         }
   
         @include mobile{
@@ -112,6 +112,7 @@ main {
             height: 20rem;
             
           }
+            
         }
       }
   
@@ -141,6 +142,38 @@ main {
           text-align: center;
           font-size: 17px;
           overflow: auto;
+
+            a{
+              color: #55b999;
+              &:hover{
+                color: #86edcd;
+                transition: 350ms;
+              }
+            }
+        }
+
+        .img-noticias{
+
+          img{
+            width: 40%;
+            margin-top: 1rem;
+            margin-bottom: 2rem;
+            margin-left: 30%; 
+            border-radius: 5%;
+            box-shadow: 2px 2px 5px rgb(22, 22, 22);
+         
+
+             @include tablet{
+              width: 45%;
+              margin-left: 26%;
+            } 
+
+            @include mobile{
+              display: none;
+            }
+          }
+        
+
         }
       }
     }
@@ -153,7 +186,7 @@ main {
   
   .videos {
     width: 100%;
-    padding: 10px;
+    
   
     @include flex;
   
@@ -179,6 +212,14 @@ main {
   
       @include tablet {
         flex-direction: column;
+        padding-left: 30%;
+        padding-right: 30%;
+      }
+
+      @include mobile{
+        padding-left: 20%;
+        padding-right: 20%;
+
       }
   
       .canal-a{
@@ -186,7 +227,7 @@ main {
            img {
               width: 310px;
               height: 200px;
-              margin-left: 0;
+              margin-left: 25px;
   
                 &:hover{
                   @extend %hover-youtube;
@@ -194,15 +235,11 @@ main {
                 }
   
               @include tablet{
-                margin-left: 2.5rem;
+                width: 100%;
+                margin-left: 0;
                 margin-bottom: 2rem;
               }
-  
-              @include mobile-small{
-                margin-left: 1rem;
-                width: 300px;
-                height: 190px;
-              }
+ 
             }    
       }
   
@@ -210,18 +247,18 @@ main {
   
           img {
             width: 340px;
-            height: 230px;
-            margin-left: 2.5rem;
+            height: 200px;
+            margin-left: 4.5rem;
   
             &:hover{
               @extend %hover-youtube;
   
             }
   
-            @include mobile-small{
-              margin-left: 1rem;
-              width: 300px;
-              height: 190px;
+            @include tablet{
+              width: 100%;
+              margin-left: 0;
+              
   
             }
   
@@ -232,7 +269,7 @@ main {
   
     .iframes {
       display: flex;
-      margin-left: 1%;
+    
       
       @include tablet{
         flex-direction: column;
@@ -357,6 +394,12 @@ main {
               width: 60%;
               padding: 20px;
               margin-left: 20%;
+
+              @include mobile{
+                width: 100%;
+                margin-left: 0 ;
+                padding: 0;
+              }
             }
   
           .video-tabs{
@@ -364,7 +407,7 @@ main {
               margin-left: 31%;
   
               @include tablet{
-                  margin-left: 23%;
+                  margin-left: 16%;
               }
   
               @include mobile{
@@ -373,7 +416,7 @@ main {
   
                   iframe{
                     @include tablet{
-                      width: 70%;
+                      width: 80%;
                     }
   
                     @include mobile{
@@ -389,13 +432,13 @@ main {
                   margin-left: 25%;
   
                   @include tablet{
-                    width: 60%;
-                    margin-left: 20%;
+                    width: 80%;
+                    margin-left: 10%;
                   }
   
                   @include mobile{
-                    width: 80%;
-                    margin-left: 10%;
+                    width: 100%;
+                    margin-left: 0;
                   }
               }
           }
@@ -436,11 +479,11 @@ main {
               flex-direction: column;
               align-content: center;
               margin-top: 30px;
-              width: 300px;
-              background-color: #999;
+              width: 400px;
+              background-color: #5d5c5c;
               padding: 1rem;
               border-radius: 3%;
-              box-shadow: 2px 2px 10px #007a49;
+              box-shadow: 2px 2px 10px #015735;
   
               label{
                 color: black;
@@ -448,8 +491,8 @@ main {
               }
   
               .input{
-                  width: 220px;
-                  height: 20px;
+                  width: 250px;
+                  height: 25px;
   
                  
               }
@@ -459,7 +502,7 @@ main {
                   background-color: #55b999;
                   border-radius: 10%;
                   box-shadow: 1px 1px 3px;
-                  margin-left: 23%;
+                  margin-left: 21%;
                   margin-top: 2rem;
                   margin-bottom: 1rem;
   
@@ -481,7 +524,7 @@ main {
               
               textarea {
                 
-                  width: 220px;
+                  width: 250px;
                 }
           }
       
@@ -489,23 +532,29 @@ main {
       }
   
       .follow{
+
           width: 100%;
-          text-align: center;
           margin-bottom: 10rem;
           margin-top: 5rem;
+
+          h2{
+            text-align: center;
+          }
           
           .contacto-redes {
-              width: 60%;
-              display: inline;
+             
+              display: flex;
+              align-items: center;
+              justify-content: center;
               margin-top: 40px;
-              margin-left: 2%;
+              margin-left: 4%;
   
   
               .img-redes2 {
                   width: 60px;
                   height: 60px;
                   margin-top: 40px;
-                  margin-right: 30px;
+                  margin-right: 45px;
                   margin-bottom: 10px;
   
                     &:hover{
