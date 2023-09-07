@@ -328,7 +328,10 @@ main .bio {
         margin-left: 0;
         padding: 0; } }
   .main-tabs .tab .video-tabs {
-    margin-left: 31%; }
+    margin-left: 35%; }
+    @media screen and (max-width: 1500px) {
+      .main-tabs .tab .video-tabs {
+        margin-left: 31%; } }
     @media screen and (max-width: 992px) {
       .main-tabs .tab .video-tabs {
         margin-left: 16%; } }

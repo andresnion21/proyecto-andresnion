@@ -402,7 +402,11 @@ main {
   
           .video-tabs{
   
-              margin-left: 31%;
+              margin-left: 35%;
+
+              @include screen{
+                margin-left: 31%;
+              }
   
               @include tablet{
                   margin-left: 16%;
