@@ -429,53 +429,6 @@ main .bio {
     @media screen and (max-width: 420px) {
       .contacto h2 {
         margin-left: 1.5rem; } }
-  .contacto .article-form {
-    margin: 0;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center; }
-    .contacto .article-form .form {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-content: center;
-      margin-top: 30px;
-      width: 400px;
-      background-color: #5d5c5c;
-      padding: 1rem;
-      border-radius: 3%;
-      box-shadow: 2px 2px 10px #015735; }
-      @media screen and (max-width: 576px) {
-        .contacto .article-form .form {
-          width: 280px; } }
-      .contacto .article-form .form label {
-        color: black;
-        font-size: 20px; }
-      .contacto .article-form .form .input {
-        width: 250px;
-        height: 25px; }
-      .contacto .article-form .form .button {
-        width: 100px;
-        background-color: #55b999;
-        border-radius: 10%;
-        box-shadow: 1px 1px 3px;
-        margin-left: 21%;
-        margin-top: 2rem;
-        margin-bottom: 1rem; }
-        @media screen and (max-width: 576px) {
-          .contacto .article-form .form .button {
-            margin-left: 32%; } }
-        .contacto .article-form .form .button:hover {
-          cursor: pointer; }
-      .contacto .article-form .form p {
-        margin-top: 0.5rem;
-        margin-bottom: 0;
-        color: black;
-        font-size: 20px; }
-      .contacto .article-form .form textarea {
-        width: 250px; }
   .contacto .follow {
     width: 100%;
     margin-bottom: 10rem;
