@@ -36,12 +36,12 @@ label {
   color: #ebebeb;
   font-size: 17px; }
 
-main .bio .parrafo-main p a:hover, footer .footer-flex ul li a:hover {
+main .bio .parrafo-main p a:hover {
   color: #86edcd;
   cursor: pointer;
   transition: 300ms; }
 
-.main-blog .titulo-blog, .main-tabs h1, .contacto h1 {
+.main-tabs h1, .contacto h1 {
   font-size: 50px;
   text-align: center;
   margin-top: 20px;
@@ -204,30 +204,25 @@ main .bio {
   .videos .titulo-video {
     font-size: 50px;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 15px; }
+    margin-top: 4rem;
+    margin-bottom: 5rem; }
   .videos .subtitulo {
     font-size: 25px;
     text-align: center;
     color: #ebebeb;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 3rem;
     margin-top: 10px; }
   .videos .canales-yt {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    margin-bottom: 6rem; }
     @media screen and (max-width: 992px) {
       .videos .canales-yt {
-        flex-direction: column;
-        padding-left: 30%;
-        padding-right: 30%; } }
-    @media screen and (max-width: 576px) {
-      .videos .canales-yt {
-        padding-left: 20%;
-        padding-right: 20%; } }
+        flex-direction: column; } }
     .videos .canales-yt .canal-a img {
-      width: 310px;
-      height: 200px;
+      width: 410px;
+      height: 300px;
       margin-left: 25px; }
       @media screen and (max-width: 992px) {
         .videos .canales-yt .canal-a img {
@@ -235,134 +230,29 @@ main .bio {
           margin-left: 0;
           margin-bottom: 2rem; } }
     .videos .canales-yt .canal-bs img {
-      width: 340px;
-      height: 200px;
+      width: 440px;
+      height: 300px;
       margin-left: 4.5rem; }
       @media screen and (max-width: 992px) {
         .videos .canales-yt .canal-bs img {
           width: 100%;
           margin-left: 0; } }
   .videos .iframes {
-    display: flex; }
+    display: flex;
+    margin-bottom: 10rem; }
     @media screen and (max-width: 992px) {
       .videos .iframes {
         flex-direction: column;
         align-items: center; } }
     .videos .iframes iframe {
-      width: 390px;
-      height: 250px;
+      width: 490px;
+      height: 350px;
       margin-left: 1rem;
       padding: 1rem; }
       @media screen and (max-width: 420px) {
         .videos .iframes iframe {
           margin-left: 0;
           width: 350px; } }
-
-/* Main Blog */
-.main-blog .blog-article {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-content: center;
-  justify-items: center;
-  gap: 1rem; }
-  @media screen and (max-width: 992px) {
-    .main-blog .blog-article {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center; } }
-  .main-blog .blog-article .subtitulo-blog {
-    font-size: 27px;
-    text-align: center;
-    color: #ebebeb;
-    padding-top: 10px;
-    grid-row-start: 1;
-    grid-column: span 2; }
-    @media screen and (max-width: 992px) {
-      .main-blog .blog-article .subtitulo-blog {
-        font-size: 25px;
-        padding: 10px; } }
-  .main-blog .blog-article .img-blog {
-    width: 460px;
-    height: 510px;
-    margin-left: 18%;
-    margin-top: 2rem;
-    border-radius: 5%;
-    grid-row-start: 3;
-    animation: animacion-blog 6s infinite; }
-    @media screen and (max-width: 992px) {
-      .main-blog .blog-article .img-blog {
-        margin-left: 0; } }
-    @media screen and (max-width: 420px) {
-      .main-blog .blog-article .img-blog {
-        width: 345px;
-        height: 350px; } }
-
-@keyframes animacion-blog {
-  0% {
-    filter: grayscale(50%); }
-  25% {
-    filter: grayscale(40%); }
-  50% {
-    filter: grayscale(30%); }
-  75% {
-    filter: grayscale(20%); }
-  100% {
-    filter: grayscale(0%); } }
-  .main-blog .blog-article h3 {
-    grid-row-start: 2;
-    grid-column: span 2; }
-  .main-blog .blog-article .texto-blog {
-    width: 73%;
-    color: #ebebeb;
-    text-align: left;
-    font-size: 20px;
-    margin-top: 1.5rem; }
-    @media screen and (max-width: 992px) {
-      .main-blog .blog-article .texto-blog {
-        width: 100%;
-        margin-top: 20px;
-        text-align: center;
-        font-size: 17px; } }
-  .main-blog .blog-article .txt {
-    grid-row-start: 3;
-    grid-column-start: 2;
-    margin-left: 2%; }
-    @media screen and (max-width: 992px) {
-      .main-blog .blog-article .txt {
-        width: 70%;
-        margin-left: 0; } }
-  .main-blog .blog-article .txt-dos {
-    grid-row-start: 5;
-    grid-column: span 2;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center; }
-    @media screen and (max-width: 992px) {
-      .main-blog .blog-article .txt-dos {
-        font-size: 17px; } }
-    .main-blog .blog-article .txt-dos p {
-      width: 100%;
-      font-size: 20px; }
-      @media screen and (max-width: 992px) {
-        .main-blog .blog-article .txt-dos p {
-          font-size: 17px; } }
-  .main-blog .blog-article .lista-blog {
-    color: #86edcd;
-    font-size: 20px;
-    text-align: left;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-    grid-row-start: 3;
-    grid-column: span 1; }
-    @media screen and (max-width: 992px) {
-      .main-blog .blog-article .lista-blog {
-        font-size: 17px;
-        padding-left: 0;
-        text-align: center; } }
 
 /* Main Tabs */
 .main-tabs {
@@ -379,14 +269,27 @@ main .bio {
     color: #ebebeb;
     margin-top: 20px; }
   .main-tabs .tab img {
-    width: 60%;
+    width: 80%;
     padding: 20px;
-    margin-left: 20%; }
+    margin-left: 10%; }
     @media screen and (max-width: 576px) {
       .main-tabs .tab img {
         width: 100%;
         margin-left: 0;
         padding: 0; } }
+  .main-tabs .tab .video-tabs-bs {
+    margin-left: 20%; }
+    @media screen and (max-width: 576px) {
+      .main-tabs .tab .video-tabs-bs {
+        margin-left: 9%; } }
+    @media screen and (max-width: 992px) {
+      .main-tabs .tab .video-tabs-bs iframe {
+        width: 80%; } }
+    @media screen and (max-width: 576px) {
+      .main-tabs .tab .video-tabs-bs iframe {
+        width: 90%; } }
+  .main-tabs .tab .tab-bs {
+    margin-bottom: 1rem; }
   .main-tabs .tab .video-tabs {
     margin-left: 35%; }
     @media screen and (max-width: 1500px) {
@@ -421,9 +324,9 @@ main .bio {
 .contacto {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  height: 100vh; }
   .contacto h2 {
     margin-top: 2rem; }
     @media screen and (max-width: 420px) {
@@ -466,48 +369,27 @@ main .bio {
 /* Footer */
 footer {
   width: 100%;
-  background-image: url("../multimedia/background.jpg");
-  padding: 5px; }
+  height: 190px;
+  background-image: url("../multimedia/background.jpg"); }
   footer .footer-flex {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; }
-    footer .footer-flex ul {
-      margin-left: 10%;
-      margin-top: 20px; }
-      @media screen and (max-width: 576px) {
-        footer .footer-flex ul {
-          margin-left: 1%; } }
-      footer .footer-flex ul li {
-        margin-bottom: 4px; }
-        footer .footer-flex ul li a {
-          color: #55b999;
-          font-size: 17px; }
+    justify-content: center;
+    margin-bottom: 2rem; }
   footer .redes {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-right: 10%; }
-    @media screen and (max-width: 992px) {
-      footer .redes {
-        margin-right: 10%; } }
-    @media screen and (max-width: 576px) {
-      footer .redes {
-        margin-right: 1%; } }
+    gap: 5rem;
+    margin-top: 2rem; }
     footer .redes .img-redes {
       width: 30px;
       height: 30px;
-      margin-top: 20px;
-      margin-right: 2.5rem; }
+      margin-top: 20px; }
       footer .redes .img-redes:hover {
         opacity: 0.6;
         scale: 0.95;
         transition: 200ms; }
-      @media screen and (max-width: 576px) {
-        footer .redes .img-redes {
-          margin-bottom: 0px;
-          margin-right: 2rem; } }
     footer .redes .youtube {
       width: 35px;
       height: 40px;
@@ -516,4 +398,5 @@ footer {
     color: #ebebeb;
     font-size: 12px;
     text-align: center;
-    margin-bottom: 0.2rem; }
+    margin-top: 4rem;
+    margin-bottom: 0.5rem; }
