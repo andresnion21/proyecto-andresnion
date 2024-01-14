@@ -59,7 +59,8 @@ main .bio .parrafo-main p a:hover {
   top: 0px;
   z-index: 1; }
   .header .bg-menu {
-    background-image: url("../multimedia/background.jpg");
+    /* background-image: url("../multimedia/background.jpg"); */
+    background-color: #131212;
     font-family: "Abel", sans-serif;
     width: 100%; }
     .header .bg-menu .nombre-nav {
@@ -264,61 +265,66 @@ main .bio {
   justify-content: center; }
   .main-tabs article {
     margin-bottom: 3rem; }
-  .main-tabs .tab h2 {
-    text-align: center;
-    color: #ebebeb;
-    margin-top: 20px; }
-  .main-tabs .tab img {
-    width: 80%;
-    padding: 20px;
-    margin-left: 10%; }
-    @media screen and (max-width: 576px) {
-      .main-tabs .tab img {
-        width: 100%;
-        margin-left: 0;
-        padding: 0; } }
-  .main-tabs .tab .video-tabs-bs {
-    margin-left: 20%; }
+  .main-tabs .tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    .main-tabs .tab h2 {
+      text-align: center;
+      color: #ebebeb;
+      margin-top: 20px; }
+    .main-tabs .tab img {
+      width: 80%;
+      padding: 20px;
+      /*  margin-left: 10%; */ }
+      @media screen and (max-width: 576px) {
+        .main-tabs .tab img {
+          width: 100%;
+          margin-left: 0;
+          padding: 0; } }
     @media screen and (max-width: 576px) {
       .main-tabs .tab .video-tabs-bs {
-        margin-left: 9%; } }
-    @media screen and (max-width: 992px) {
-      .main-tabs .tab .video-tabs-bs iframe {
-        width: 80%; } }
-    @media screen and (max-width: 576px) {
-      .main-tabs .tab .video-tabs-bs iframe {
-        width: 90%; } }
-  .main-tabs .tab .tab-bs {
-    margin-bottom: 1rem; }
-  .main-tabs .tab .video-tabs {
-    margin-left: 35%; }
-    @media screen and (max-width: 1500px) {
-      .main-tabs .tab .video-tabs {
-        margin-left: 31%; } }
-    @media screen and (max-width: 992px) {
-      .main-tabs .tab .video-tabs {
-        margin-left: 16%; } }
-    @media screen and (max-width: 576px) {
-      .main-tabs .tab .video-tabs {
-        margin-left: 9%; } }
-    @media screen and (max-width: 992px) {
-      .main-tabs .tab .video-tabs iframe {
-        width: 80%; } }
-    @media screen and (max-width: 576px) {
-      .main-tabs .tab .video-tabs iframe {
-        width: 90%; } }
-  .main-tabs .tab .tab-dos img {
-    width: 50%;
-    margin-left: 25%;
-    margin-bottom: 1rem; }
-    @media screen and (max-width: 992px) {
+        /* margin-left: 9%; */ } }
+    .main-tabs .tab .video-tabs-bs iframe {
+      /*       @include tablet{
+                        width: 80%;
+                      }
+ */ }
+      @media screen and (max-width: 576px) {
+        .main-tabs .tab .video-tabs-bs iframe {
+          width: 90%; } }
+    .main-tabs .tab .tab-bs {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 1rem; }
+      .main-tabs .tab .tab-bs .tab-ctc {
+        width: 60%; }
+        @media screen and (max-width: 576px) {
+          .main-tabs .tab .tab-bs .tab-ctc {
+            width: 100%;
+            margin-left: 0; } }
+    .main-tabs .tab .video-tabs iframe {
+      /*       @include tablet{
+                      width: 80%;
+                    } */ }
+      @media screen and (max-width: 576px) {
+        .main-tabs .tab .video-tabs iframe {
+          width: 90%; } }
+    .main-tabs .tab .tab-dos {
+      display: flex;
+      justify-content: center; }
       .main-tabs .tab .tab-dos img {
-        width: 80%;
-        margin-left: 10%; } }
-    @media screen and (max-width: 576px) {
-      .main-tabs .tab .tab-dos img {
-        width: 100%;
-        margin-left: 0; } }
+        width: 50%;
+        margin-bottom: 1rem; }
+        @media screen and (max-width: 992px) {
+          .main-tabs .tab .tab-dos img {
+            width: 80%; } }
+        @media screen and (max-width: 576px) {
+          .main-tabs .tab .tab-dos img {
+            width: 100%;
+            margin-left: 0; } }
+      .main-tabs .tab .tab-dos .tab-stringskip {
+        width: 75%; }
 
 /* Main Contacto */
 .contacto {
@@ -370,7 +376,8 @@ main .bio {
 footer {
   width: 100%;
   height: 190px;
-  background-image: url("../multimedia/background.jpg"); }
+  background-color: #131212;
+  /*  background-image: url("../multimedia/background.jpg"); */ }
   footer .footer-flex {
     display: flex;
     flex-wrap: wrap;
