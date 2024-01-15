@@ -314,7 +314,7 @@ main .bio {
       display: flex;
       justify-content: center; }
       .main-tabs .tab .tab-dos img {
-        width: 50%;
+        width: 40%;
         margin-bottom: 1rem; }
         @media screen and (max-width: 992px) {
           .main-tabs .tab .tab-dos img {
@@ -325,6 +325,19 @@ main .bio {
             margin-left: 0; } }
       .main-tabs .tab .tab-dos .tab-stringskip {
         width: 75%; }
+        @media screen and (max-width: 576px) {
+          .main-tabs .tab .tab-dos .tab-stringskip {
+            width: 100%;
+            margin-left: 0; } }
+      .main-tabs .tab .tab-dos .tab-ejalt {
+        width: 52%; }
+        @media screen and (max-width: 992px) {
+          .main-tabs .tab .tab-dos .tab-ejalt {
+            width: 75%; } }
+        @media screen and (max-width: 576px) {
+          .main-tabs .tab .tab-dos .tab-ejalt {
+            width: 100%;
+            margin-left: 0; } }
 
 /* Main Contacto */
 .contacto {

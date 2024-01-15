@@ -394,7 +394,7 @@ main {
 
               
               img{
-                  width: 50%;
+                  width: 40%;
               
                   margin-bottom: 1rem;
   
@@ -411,6 +411,26 @@ main {
 
               .tab-stringskip{
                 width: 75%;
+
+                @include mobile{
+                  width: 100%;
+                  margin-left: 0;
+                }
+              }
+              
+              .tab-ejalt{
+                 width: 52%;
+
+
+                  @include tablet{
+                    width: 75%;
+                    
+                  }
+
+                  @include mobile{
+                    width: 100%;
+                    margin-left: 0;
+                  }
               }
 
               
